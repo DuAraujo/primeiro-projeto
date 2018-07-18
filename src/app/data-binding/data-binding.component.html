@@ -1,0 +1,17 @@
+<section class="property-binding">
+
+  <article>
+    <h3>Interpolação</h3>
+    <p>url: {{ url }}</p>
+    <p>Calculando 1 + 1 = {{ 1+1 }}</p>
+    <p>Calculando com método:  1 + 1 não é {{ 1+1+ getValor()}}</p>
+    <p>Expressões lógicas com interpolação = {{verdadeiro && curtir()}}</p>
+  </article>
+
+  <article>
+    <p>Property Binding</p>
+    <img src = "{{ urlImagem }}"><p></p>
+    <img [src] = "urlImagem">
+  </article>
+
+</section>

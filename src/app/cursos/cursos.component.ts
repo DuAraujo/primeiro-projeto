@@ -16,8 +16,8 @@ export class CursosComponent implements OnInit {
 
   constructor(private cursoService: CursosService) {
     this.faculdade = 'Instituto Federal do Amazonas - IFAM';
-
-   this.cursos = this.cursoService.getCursos();
+    
+    this.cursos = this.cursoService.getCursos();
 
    }
 
