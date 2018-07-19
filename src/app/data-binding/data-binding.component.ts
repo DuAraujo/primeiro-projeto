@@ -14,7 +14,13 @@ export class DataBindingComponent implements OnInit {
   valorAtual: string = '';
   valorSalvo: string = '';
   isMouseOver: boolean = false;
-  
+  nome: string = 'abc';
+
+  elector: any = {
+    name: 'Eduardo',
+    age: 20
+  }
+    
 
   constructor() {
 
@@ -35,7 +41,7 @@ export class DataBindingComponent implements OnInit {
 
   onkeyUp(evento){
     console.log(evento);
-    this.valorAtual = evento;
+    this.nome = evento;
   }
 
   salvarValor(valor){
