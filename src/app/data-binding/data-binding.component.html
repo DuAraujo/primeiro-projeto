@@ -14,7 +14,7 @@
     <img [src] = "urlImagem">
   </article> -->
 
- <!--  <article>
+  <!--  <article>
     <p>Class e Style Property-Binding</p>
   </article> -->
 
@@ -64,35 +64,43 @@
 
   </article> -->
 
-  <!-- <h3>Data Binding</h3>
-  <article>
+  
+  <article style="display: none">
+      <h3>Data Binding</h3>
     <p>Two Way Data Binding</p>
+
     <div>
-        <input type="text"
-          [value] = "nome"
-          (input)="onkeyUp($event.target.value)"
-        />
+      <!-- associação de propriedade do Componente -> Template: [value]="nome" -->
+      <!-- associação de evento do Template -> Componente: (input)="onkeyUp($event.target.value)"-->
+      <input type="text" [value]= "nome" (input)="onkeyUp($event.target.value)" />
+      <!--Template - Componente escultam ao mesmo tempo bidirecional: [(ngModel)]="nome"  -->
+      <input type="text" [(ngModel)]="nome" />
+      <p>Vc digitou: {{nome}}</p>
 
-        <input type="text" [(ngModel)]="nome"/> 
+      <br/>
 
-        <input type="text" [(ngModel)]="elector.name"/>
-        <input type="text" [(ngModel)]="elector.age"/> 
-        {{elector.name}}
-        {{elector.age}}
+      <input type="text" [(ngModel)]="elector.name" />
+      <input type="text" [(ngModel)]="elector.age" />
+      <br/>
+
+
+      <p>Nome: {{elector.name}}, idade: {{elector.age}} </p>
+
+      <p>DashBoard</p>
+      
 
     </div>
-    <p>Vc digitou: {{nome}}</p>
 
-  </article> -->
+  </article>
 
 
     <article>
 
       <h3>Input/Output Properties</h3>
 
-      <app-curso [nomeCurso]="nomeCurso"></app-curso>
+      <!-- <app-curso [nomeCurso]="nomeCurso"></app-curso> -->
 
-    </article>
+    </article> 
 
 
 </section>

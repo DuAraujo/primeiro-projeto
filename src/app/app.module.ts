@@ -17,7 +17,7 @@ import { InputPropertyComponent } from './input-property/input-property.componen
     MeuPrimeiroComponent,
     MeuPrimeiro2Component,
     DataBindingComponent,
-    InputPropertyComponent
+    InputPropertyComponent,
   ],
   imports: [
     BrowserModule,
