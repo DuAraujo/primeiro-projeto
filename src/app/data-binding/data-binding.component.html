@@ -94,13 +94,23 @@
   </article>
 
 
-    <article>
+    <article  style="display: none">
 
       <h3>Input/Output Properties</h3>
 
       <app-curso [nome]="nomeCurso"></app-curso>
 
     </article> 
+
+
+
+
+
+    <article>
+      <h3>Output Property</h3>
+      <!-- Se passar valor fixo, não precisa de property bind: [contador]-->
+      <contador contador="20" (mudouValor)="onMudouValor($event)"></contador>
+    </article>
 
 
 </section>

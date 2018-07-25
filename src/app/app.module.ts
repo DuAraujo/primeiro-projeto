@@ -9,6 +9,7 @@ import { CursosModule } from './cursos/cursos.module';
 import { CursosService } from './cursos/cursos.service';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { InputPropertyComponent } from './input-property/input-property.component';
+import { OutputPropertyComponent } from './output-property/output-property.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { InputPropertyComponent } from './input-property/input-property.componen
     MeuPrimeiro2Component,
     DataBindingComponent,
     InputPropertyComponent,
+    OutputPropertyComponent,
   ],
   imports: [
     BrowserModule,
