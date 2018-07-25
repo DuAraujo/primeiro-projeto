@@ -1,6 +1,6 @@
 <section class="property-binding">
 
-  <!--  <article>
+  <article style="display:none">
     <h3>Interpolação</h3>
     <p>url: {{ url }}</p>
     <p>Calculando 1 + 1 = {{ 1+1 }}</p>
@@ -8,17 +8,17 @@
     <p>Expressões lógicas com interpolação = {{verdadeiro && curtir()}}</p>
   </article>
 
-  <article>
+  <article style="display:none">
     <p>Property Binding</p>
     <img src = "{{ urlImagem }}">
     <img [src] = "urlImagem">
-  </article> -->
+  </article> 
 
-  <!--  <article>
+  <article style="display:none">
     <p>Class e Style Property-Binding</p>
-  </article> -->
+  </article> 
 
-  <!-- <article>
+  <article style="display: none">
     <p>Options:</p>
     <select #classe (change)=0>
       <option value="alert-success">Sucesso</option>
@@ -34,17 +34,16 @@
     </div>
 
     <br/>
-
-     Caso o combo selecionado for "classe.value == 'alert-success', mostrar classe de success 
+     <!-- Caso o combo selecionado for "classe.value == 'alert-success', mostrar classe de success  -->
     <div class="alert" role="alert" [class.alert-success]="classe.value == 'alert-success'">Sucesso</div>
     <div class="alert" role="alert" [class.alert-info]="classe.value == 'alert-info'">Info</div>
     <div class="alert" role="alert" [class.alert-warning]="classe.value == 'alert-warning'">Alerta</div>
     <div class="alert" role="alert" [class.alert-danger]="classe.value == 'alert-danger'">Erro</div>
-  </article> -->
+  </article>
 
 
 
-  <!-- <article>
+  <article style="display: none">
     <p>Event Binding</p>
     <div>
       <button (click)="botaoClicado()" class="btn btn-primary">Button</button>
@@ -62,7 +61,7 @@
       EVENT MOUSE OUVER AND MOUSE OUT
     </span>
 
-  </article> -->
+  </article> 
 
   
   <article style="display: none">
@@ -100,16 +99,13 @@
 
       <app-curso [nome]="nomeCurso"></app-curso>
 
-    </article> 
-
-
-
+    </article>
 
 
     <article>
       <h3>Output Property</h3>
       <!-- Se passar valor fixo, não precisa de property bind: [contador]-->
-      <contador contador="20" (mudouValor)="onMudouValor($event)"></contador>
+      <contador [contador]="contador" (mudouValor)="onMudouValor($event)"></contador>
     </article>
 
 
