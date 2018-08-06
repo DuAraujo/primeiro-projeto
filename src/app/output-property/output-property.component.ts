@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'contador',
@@ -9,19 +9,21 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 export class OutputPropertyComponent implements OnInit {
 
 
-  system:string = 'System.out.println';
   @Input() contador:number = 0;
    //Emissor de eventos, comunicar o componente pai
   @Output() mudouValor = new EventEmitter();
-  
+
+  @ViewChild('variavelLocal') campoValorInput: ElementRef; 
+
+
   constructor() { }
 
   ngOnInit() {
-    console.log(this.system);
   }
 
   incrementa(){
-    this.contador++;
+    this.campoValorInput.nativeElement.value++;
+    //this.contador++;
     this.mudouValor.emit({novoValor: this.contador});
   }
   decrementa(){
