@@ -13,6 +13,7 @@ export class AppComponent {
   mudarValor(){
     this.valor++;
   }
+  
   destruirCiclo(){
     this.destroy = true;
   }

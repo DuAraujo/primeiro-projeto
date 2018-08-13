@@ -11,6 +11,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { InputPropertyComponent } from './input-property/input-property.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
 import { CicloComponent } from './ciclo/ciclo.component';
+import { IncorporarVideoComponent } from './incorporar-video/incorporar-video.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { CicloComponent } from './ciclo/ciclo.component';
     InputPropertyComponent,
     OutputPropertyComponent,
     CicloComponent,
+    IncorporarVideoComponent,
   ],
   imports: [
     BrowserModule,
